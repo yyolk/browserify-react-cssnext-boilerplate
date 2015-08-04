@@ -1,0 +1,9 @@
+body {
+  background: var(--Emerald);
+  color: #000;
+  padding: 20px;
+}
+
+h1 {
+  color: blue
+}
