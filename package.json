@@ -14,7 +14,7 @@
     "build:js": "browserify ./lib/boot/index.js | uglifyjs > build/build.js",
     "watch:js": "watchify ./lib/boot/index.js -o build/build.js --debug --verbose",
     "watch:css": "nodemon -e css --exec 'cssnext ./lib/boot/index.css build/build.css'",
-    "lint": "standard lib/**/*.js"
+    "lint": "standard lib/**/*.js test/*.js"
   },
   "dependencies": {
     "react": "^0.13.3"
