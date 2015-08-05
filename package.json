@@ -14,7 +14,7 @@
     "build:js": "browserify ./lib/boot/index.js | uglifyjs > build/build.js",
     "watch:js": "watchify ./lib/boot/index.js -o build/build.js --debug --verbose",
     "watch:css": "nodemon -e css --exec 'cssnext ./lib/boot/index.css build/build.css'",
-    "lint": "standard lib/**/*.js test/*.js"
+    "lint": "standard lib/**/*.js test/*.js | standard-tap"
   },
   "dependencies": {
     "react": "^0.13.3"
@@ -30,6 +30,7 @@
     "nodemon": "^1.4.0",
     "normalize.css": "^3.0.3",
     "standard": "^5.0.0",
+    "standard-tap": "^1.0.0",
     "uglify-js": "^2.4.24",
     "watchify": "^3.3.1"
   },
